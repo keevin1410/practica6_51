@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h2>FORMULARIOS</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos Generales</legend>
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad">
+                </div>
+
+                <div>
+                    <label for="clave">Clave</label>
+                    <input type="password" name="clave" id="clave">
+                </div>
+
+                <div>
+                    <label for="cf">Color</label>
+                    <input type="color" name="c_f" id="cf">
+                </div>
+
+                <div>
+                    <label for="días">Días</label>
+                    <input type="range" min ="1" max="10" name="dias" id="dias">
+                </div>
+
+                <div>
+                    <label for="sucursal">Sucursal</label>
+                    <select name="sucursal" id="sucursal">
+                        <option value="1">Centro</option>
+                        <option value="2">Universidad</option>
+                        <option value="3">Sur</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="sucursal2">Sucursal</label>
+                    <select name="sucursal2" id="sucursal2" multiple>
+                        <option value="1">Centro</option>
+                        <option value="2">Universidad</option>
+                        <option value="3">Sur</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="sucursal3">Sucursal</label>
+                    <select name="sucursal3" id="sucursal3">
+                        <optgroup label = "San Nicolas">
+                            <option value="1">Nogalar</option>
+                            <option value="2">Universidad</option>
+                        </optgroup>
+                        <optgroup label = "Guadalupe">
+                            <option value="4">Benito Juarez</option>
+                            <option value="5">Pablo Livas</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Observaciones:</label>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <h2>Tablas HTML</h2>
+
+        <table border="1px">
+            <tr>
+                <th>Matrícula</th>
+                <th>Nombre</th>
+                <th>Carrera</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nobis debitis, molestiae eius rerum tempora possimus iste, distinctio reprehenderit, natus laborum ullam odit? Quisquam ipsam ipsa corrupti tenetur obcaecati eligendi.</td>
+            </tr>
+        </table>
+
+        <!--TABLE 2 -->
+        <hr>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th colspan="3">LENGUAJES</th>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <th>Java</th>
+                    <th>C#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Multiplataforma</td>
+                    <td>Windows</td>
+                    <td>Multiplataforma</td>
+                </tr>
+
+                <tr>
+                    <td>2005</td>
+                    <td>2000</td>
+                    <td>1995</td>
+                </tr>
+
+                <tr>
+                    <td>Guido Van Rossum</td>
+                    <td>Anders Hejsberg</td>
+                    <td>James Gosling</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">&copy; Derechos reservados</td>
+                </tr>
+                <tr>
+                    <td colspan="3">KIMC</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
